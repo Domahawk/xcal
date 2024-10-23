@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*:root {*/
+/*    !* Base colors *!*/
+/*    --bg-color: #121212; !* Dark background *!*/
+/*    --font-color: #FFFFFF; !* White text for readability *!*/
+/*    --muted-font-color: #B0BEC5; !* Muted gray text for less emphasis *!*/
+/*    --heading-color: #FFFFFF; !* White headings *!*/
+/*    --light-bg-color: #1E1E1E; !* Slightly lighter background for cards/sections *!*/
+
+/*    !* Primary and secondary colors *!*/
+/*    --primary-color: #BB86FC; !* Vibrant purple for primary elements *!*/
+/*    --secondary-color: #03DAC6; !* Teal for secondary elements *!*/
+/*    --accent-color: #BB86FC; !* Same as primary color for consistency *!*/
+
+/*    !* Status colors *!*/
+/*    --success-color: #00E676; !* Bright green for success messages *!*/
+/*    --warning-color: #FBC02D; !* Amber for warnings *!*/
+/*    --error-color: #CF6679; !* Red/pink for errors *!*/
+
+/*    !* Button colors *!*/
+/*    --button-bg: #BB86FC; !* Vibrant purple background for buttons *!*/
+/*    --button-text: #FFFFFF; !* White text on buttons *!*/
+
+/*    !* Interaction states *!*/
+/*    --button-hover-bg: #985EFF; !* Slightly darker purple on hover *!*/
+/*    --button-hover-text: #FFFFFF;*/
+/*    --button-focus-bg: #7F39FB; !* Even darker purple on focus *!*/
+/*    --button-focus-text: #FFFFFF;*/
+/*    --button-disabled-bg: #3E3E3E; !* Gray for disabled buttons *!*/
+/*    --button-disabled-text: #B0BEC5; !* Muted gray for disabled text *!*/
+/*}*/
+
+/*:root {*/
+/*    !* Base colors *!*/
+/*    --bg-color: #FFFFFF; !* White background *!*/
+/*    --font-color: #000000; !* Black text for readability *!*/
+/*    --muted-font-color: #5F6368; !* Muted gray text for less emphasis *!*/
+/*    --heading-color: #000000; !* Black headings *!*/
+/*    --light-bg-color: #F1F3F4; !* Light gray for section backgrounds *!*/
+
+/*    !* Primary and secondary colors *!*/
+/*    --primary-color: #6200EE; !* Deep purple for primary elements *!*/
+/*    --secondary-color: #018786; !* Teal for secondary elements *!*/
+/*    --accent-color: #6200EE; !* Same as primary color for consistency *!*/
+
+/*    !* Status colors *!*/
+/*    --success-color: #0F9D58; !* Green for success messages *!*/
+/*    --warning-color: #F9A825; !* Amber for warnings *!*/
+/*    --error-color: #D32F2F; !* Red for errors *!*/
+
+/*    !* Button colors *!*/
+/*    --button-bg: #6200EE; !* Deep purple background for buttons *!*/
+/*    --button-text: #FFFFFF; !* White text on buttons *!*/
+
+/*    !* Interaction states *!*/
+/*    --button-hover-bg: #3700B3; !* Slightly darker purple on hover *!*/
+/*    --button-hover-text: #FFFFFF;*/
+/*    --button-focus-bg: #30009C; !* Even darker purple on focus *!*/
+/*    --button-focus-text: #FFFFFF;*/
+/*    --button-disabled-bg: #E0E0E0; !* Gray for disabled buttons *!*/
+/*    --button-disabled-text: #9E9E9E; !* Muted gray for disabled text *!*/
+/*}*/
+
+
+:root {
+    /* You can place shared variables here if needed */
+}
+
+/* Light Theme Variables */
+:root.light-theme {
+    /* Base colors */
+    --bg-color: #FFFFFF;
+    --font-color: #000000;
+    --muted-font-color: #5F6368;
+    --heading-color: #000000;
+    --light-bg-color: #F1F3F4;
+
+    /* Primary and secondary colors */
+    --primary-color: #6200EE;
+    --secondary-color: #018786;
+    --accent-color: #6200EE;
+
+    /* Status colors */
+    --success-color: #0F9D58;
+    --warning-color: #F9A825;
+    --error-color: #D32F2F;
+
+    /* Button colors */
+    --button-bg: #6200EE;
+    --button-text: #FFFFFF;
+
+    /* Interaction states */
+    --button-hover-bg: #3700B3;
+    --button-hover-text: #FFFFFF;
+    --button-focus-bg: #30009C;
+    --button-focus-text: #FFFFFF;
+    --button-disabled-bg: #E0E0E0;
+    --button-disabled-text: #9E9E9E;
+}
+
+/* Dark Theme Variables */
+:root.dark-theme {
+    /* Base colors */
+    --bg-color: #121212;
+    --font-color: #FFFFFF;
+    --muted-font-color: #B0BEC5;
+    --heading-color: #FFFFFF;
+    --light-bg-color: #1E1E1E;
+
+    /* Primary and secondary colors */
+    --primary-color: #BB86FC;
+    --secondary-color: #03DAC6;
+    --accent-color: #BB86FC;
+
+    /* Status colors */
+    --success-color: #00E676;
+    --warning-color: #FBC02D;
+    --error-color: #CF6679;
+
+    /* Button colors */
+    --button-bg: #BB86FC;
+    --button-text: #FFFFFF;
+
+    /* Interaction states */
+    --button-hover-bg: #985EFF;
+    --button-hover-text: #FFFFFF;
+    --button-focus-bg: #7F39FB;
+    --button-focus-text: #FFFFFF;
+    --button-disabled-bg: #3E3E3E;
+    --button-disabled-text: #B0BEC5;
+}
+
+/* Vue3 Date Picker Dark mode mods*/
+.dp__theme_dark {
+    --dp-background-color: var(--bg-color);
+}
+
+body {
+    color: var(--font-color);
+    background: var(--bg-color);
+}
