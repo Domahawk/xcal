@@ -16,10 +16,10 @@ const currencies: Ref<object> = ref({
   bam: "Bosnia And Herzegovina Convertible Mark",
   pln: "Polish Zloty"
 });
-const selectedCurrency: Ref<String> = ref("");
+const selectedCurrency: Ref<string> = ref("");
 
 const emit = defineEmits<{
-  (e: 'currencyChange', value: String): void
+  (e: 'currencyChange', value: string): void
 }>()
 
 const handleCurrencyChange = () => {

@@ -3,16 +3,12 @@ export interface CalculatorSuccessResponse {
 }
 
 export interface CalculationResult {
-    exchangeRate: Number
-    amount: Number
-    currency: String
+    exchangeRate: number
+    amount: number
+    currency: string
 }
 
 export interface CalculatorErrorResponse {
-    message: String
-    errors: Object<ValidationErrors>
-}
-
-export interface ValidationErrors {
-    errors: Array
+    message: string
+    errors: { [key: string]: string }
 }

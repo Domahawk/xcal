@@ -6,7 +6,7 @@ const state = reactive({
 });
 
 export function useTheme() {
-    function setTheme(newTheme) {
+    function setTheme(newTheme: string) {
         state.theme = newTheme;
         document.documentElement.className = ''; // Reset class list
         document.documentElement.classList.add(`${newTheme}-theme`);

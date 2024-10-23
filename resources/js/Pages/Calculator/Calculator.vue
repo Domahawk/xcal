@@ -65,11 +65,11 @@ const calculateRequest = async () => {
             return;
         }
 
-        errors.value = error.response.data;
+        errors.value = error.response?.data;
     }
 };
 
-const formatNumber = (number: Number, round: boolean = false): string => {
+const formatNumber = (number: number, round: boolean = false): string => {
     if (round) {
         return new Big(number).toFixed(2);
     }
