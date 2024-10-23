@@ -1,10 +1,10 @@
 // services/backendApi.js
 import axios from 'axios';
 
-const apiUrl = import.meta.env.VITE_API_URL;
+const apiUrl = import.meta.env.VITE_APP_URL;
 
 const backendApi = axios.create({
-    baseURL: apiUrl, // Adjust this to your actual Laravel API base URL if necessary
+    baseURL: '/api', // Adjust this to your actual Laravel API base URL if necessary
     headers: {
         'Content-Type': 'application/json',
         'X-Requested-With': 'XMLHttpRequest',
