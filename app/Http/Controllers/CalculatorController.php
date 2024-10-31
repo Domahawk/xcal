@@ -13,10 +13,9 @@ use Inertia\Inertia;
 class CalculatorController extends Controller
 {
     public function __construct(
-        private readonly CalculatorService   $calculatorService,
+        private readonly CalculatorService $calculatorService,
         private readonly ExchangeRateService $exchangeRateService,
-    )
-    {
+    ) {
     }
 
     /**
@@ -67,6 +66,5 @@ class CalculatorController extends Controller
      */
     public function destroy(string $id)
     {
-        //
     }
 }
