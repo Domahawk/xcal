@@ -12,9 +12,18 @@
 ```bash
 docker compose up -d
 ```
+If you're getting errors with vendor file, you can run
+```bash
+docker run --rm -v $(pwd):/app --user 1000:1000 composer update && composer install
+```
+This command  will do the following: 
+* make a temporary docker container 
+* mount current working directory to /app directory in container
+* use 1000 user id and group id (default uid and gid for your user on linux) so there is no permission denied errors
+* run composer update and composer install commands
  - Enter container
 ```bash
-docker compose exec -it laravel.test
+docker compose exec -it laravel.test bash
 ```
  - Install dependencies
 ```bash
