@@ -43,6 +43,8 @@ npm install
 
 Now you are ready to run project locally!
 
+If errors persist, check if Vite is running for frontend.
+
 ### Running after setup
 Since `sail` is a project dependency you can use it to run the project instead of `docker compose`.
 
